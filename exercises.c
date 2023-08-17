@@ -81,7 +81,7 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-      int temp1 = 0;  
+    int temp1 = 0;  
     int temp2 = 0;  
     int mergedTemp = 0;  
     
@@ -116,9 +116,25 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) { 
+  int ascendente = 1;
+  int descendente = 1;
   
-  
-  return -2; 
+  for (int i = 1; i < size; i++) {
+    if (arr[i] < arr[i - 1]) {
+      ascendente = 0;
+    }
+    if (arr[i] > arr[i - 1]) {
+      descendente = 0;
+    }
+  }
+
+  if (ascendente) {
+    return 1;
+  } else if (descendente) {
+    return -1;
+  } else {
+    return 0;
+  }
 }
 
 /*
