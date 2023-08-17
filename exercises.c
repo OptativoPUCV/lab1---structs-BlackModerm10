@@ -83,29 +83,29 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
 {
     int temp1 = 0;  
     int temp2 = 0;  
-    int mergedTemp = 0;  
+    int mergeTemp = 0;  
     
     while (temp1 < size1 && temp2 < size2) {
         if (arr1[temp1] <= arr2[temp2]) {
-            result[mergedTemp] = arr1[temp1];
+            result[mergeTemp] = arr1[temp1];
             temp1++;
         } else {
-            result[mergedTemp] = arr2[temp2];
+            result[mergeTemp] = arr2[temp2];
             temp2++;
         }
-        mergedTemp++;
+        mergeTemp++;
     }
     
     while (temp1 < size1) {
-        result[mergedTemp] = arr1[temp1];
+        result[mergeTemp] = arr1[temp1];
         temp1++;
-        mergedTemp++;
+        mergeTemp++;
     }
 
     while (temp2 < size2) {
-        result[mergedTemp] = arr2[temp2];
+        result[mergeTemp] = arr2[temp2];
         temp2++;
-        mergedTemp++;
+        mergeTemp++;
     }
 }
 
@@ -157,7 +157,11 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) 
+{
+  
+                      
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
