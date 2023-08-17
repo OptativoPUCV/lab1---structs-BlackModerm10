@@ -89,3 +89,26 @@ exercises.c:14:19: error: expected expression before ‘]’ token
       |                   ^
 Compilation failed
 5aa7e21
+Thu 17 Aug 2023 08:09:29 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:17: error: invalid initializer
+   14 |     int max[] = arr[0];
+      |                 ^~~
+exercises.c:17:20: error: comparison between pointer and integer [-Werror]
+   17 |         if (arr[i] < max) {
+      |                    ^
+exercises.c:18:18: error: expected expression before ‘]’ token
+   18 |              max[] = arr[i];
+      |                  ^
+exercises.c:21:16: error: expected expression before ‘]’ token
+   21 |     return max[];
+      |                ^
+exercises.c:22:1: error: control reaches end of non-void function [-Werror=return-type]
+   22 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+88d9bde
