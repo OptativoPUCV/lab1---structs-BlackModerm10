@@ -60,12 +60,12 @@ int* filterEvenNumbers(const int arr[], int size, int *newSize) {
         return NULL;
     }
     
-    int index = 0;
+    int temp = 0;
     
     for (int i = 0; i < size; i++) {
         if (arr[i] % 2 == 0) {
-            evenArray[index] = arr[i];
-            index++;
+            evenArray[temp] = arr[i];
+            temp++;
         }
     }
     
@@ -79,7 +79,11 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) 
+{
+  
+  
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -87,7 +91,11 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) { 
+  
+  
+  return -2; 
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
