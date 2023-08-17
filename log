@@ -3,3 +3,23 @@ Thu 17 Aug 2023 08:00:54 PM UTC:
  tests:  0|7
 total_score: 0/70
 b42eaed
+Thu 17 Aug 2023 08:01:52 PM UTC: 
+ exercises.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:17: error: invalid initializer
+   14 |     int max[] = arr[0];
+      |                 ^~~
+exercises.c:17:20: error: comparison between pointer and integer [-Werror]
+   17 |         if (arr[i] < max) {
+      |                    ^
+exercises.c:18:18: error: assignment to expression with array type
+   18 |              max = arr[i];
+      |                  ^
+exercises.c:21:12: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Werror=int-conversion]
+   21 |     return max;
+      |            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+76a8449
