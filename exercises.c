@@ -25,7 +25,8 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {
+void reverseArray(int arr[], int size) 
+{
     int izq = 0;            
     int der = size - 1;    
 
@@ -44,7 +45,8 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int* filterEvenNumbers(const int arr[], int size, int *newSize) {
+int* filterEvenNumbers(const int arr[], int size, int *newSize) 
+{
     int evenCount = 0;
     
     for (int i = 0; i < size; i++) {
@@ -115,7 +117,8 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { 
+int checkSorted(int arr[], int size) 
+{ 
   int ascendente = 1;
   int descendente = 1;
   
@@ -181,4 +184,8 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) 
+{ 
+  
+  return NULL; 
+}
